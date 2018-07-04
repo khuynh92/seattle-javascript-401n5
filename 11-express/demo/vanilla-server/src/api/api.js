@@ -1,6 +1,6 @@
 'use strict';
 
-const router = require('../lib/router.js');
+const router = require('express');
 const Notes = require('../models/notes.js');
 
 /**
@@ -57,4 +57,4 @@ router.post('/api/v1/notes', (req,res) => {
 
 });
 
-module.exports = {};
+module.exports = router;

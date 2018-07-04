@@ -4,7 +4,8 @@ import express from 'express';
 let app = express();
 
 // Express body and URL parsers
-app.use(express.json());
+//middleware
+app.use(express.json()); //runs this parser on every request.
 app.use(express.urlencoded({extended:true}));
 
 // Our modules -- import the api and "use" it as middleware for express
