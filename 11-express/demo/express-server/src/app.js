@@ -36,4 +36,5 @@ module.exports = {
       console.log('Server has been stopped');
     });
   },
+  server: app,
 };
